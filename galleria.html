@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galleria - Kandy&Co Travels</title>
+    <link rel="stylesheet" href="stile.css">
+    <style>
+        header {
+            background: linear-gradient(to bottom, #ffcc99, #ffffff);
+            padding: 20px; 
+            text-align: center;
+            color: #ff5733;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        nav a {
+            margin: 0 15px;
+            color: #ff5733;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            padding: 20px;
+            text-align: center;
+        }
+
+        h2 {
+            color: #ff5733;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .gallery img {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        footer {
+            text-align: center;
+            margin: 20px 0;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Le Nostre Destinazioni</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="chi-siamo.html">Chi Siamo</a>
+            <a href="galleria.html">Galleria</a>
+            <a href="contatti.html">Contatti</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Scopri le Nostre  MIGLIORI Destinazioni</h2>
+        <div class="gallery">
+            <img src="immagini/newyork.jpg" alt="New York">
+            <img src="immagini/parigi.jpg" alt="Parigi">
+            <img src="immagini/tokyo.jpg" alt="Tokyo">
+            <img src="immagini/londra.jpg" alt="Londra">
+            <img src="immagini/sidney.jpg" alt="Sidney">
+            <img src="immagini/roma.jpg" alt="Roma">
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Kandy&Co Travels</p>
+    </footer>
+</body>
+</html>
